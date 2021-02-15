@@ -1,0 +1,40 @@
+{
+  "name": "monto-vscode",
+  "version": "2.0.0",
+  "description": "Monto structured text views for VSCode",
+  "main": "dist/index",
+  "typings": "dist/index",
+  "scripts": {
+    "prepublishOnly": "npm run compile",
+    "compile": "npm run clean && npx tsc -p .",
+    "watch": "npx tsc -w -p .",
+    "clean": "rm -rf dist"
+  },
+  "bugs": {
+    "url": "http://github.com/inkytonik/monto-vscode/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/inkytonik/monto-vscode.git"
+  },
+  "keywords": [
+    "Monto",
+    "text editing",
+    "structured editor views"
+  ],
+  "author": "Anthony Sloane <inkytonik@gmail.com>",
+  "license": "MPL-2.0",
+  "dependencies": {
+    "vscode-languageclient": "^5.2.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.1.0",
+    "@types/node": "^8.0.0",
+    "@types/vscode": "^1.46.0"
+  },
+  "files": [
+    "dist/index.js",
+    "dist/index.d.ts",
+    "dist/lib"
+  ]
+}
